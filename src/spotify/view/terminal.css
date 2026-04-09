@@ -1,0 +1,228 @@
+/* ===================================================================
+ * terminal.css — Retro ASCII Terminal Theme
+ * ===================================================================
+ * Color palette:
+ *   Background:     White (#FFFFFF)
+ *   Terminal bg:    Light Blue (#E8F4FD)
+ *   Text:           Dark Blue (#1A5276)
+ *   Accent:         Medium Blue (#2E86C1)
+ *   Borders:        Steel Blue (#5DADE2)
+ *   Highlight:      Bright Blue (#3498DB)
+ * =================================================================== */
+
+/* Root application background */
+.root {
+    -fx-background-color: #FFFFFF;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+/* Main container panel */
+.main-panel {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 15;
+    -fx-spacing: 12;
+}
+
+/* ===== TITLE BANNER ===== */
+.title-label {
+    -fx-font-family: "Consolas", "Courier New", "Monospaced";
+    -fx-font-size: 14px;
+    -fx-text-fill: #1A5276;
+    -fx-font-weight: bold;
+    -fx-padding: 8;
+    -fx-background-color: #E8F4FD;
+    -fx-border-color: #5DADE2;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.subtitle-label {
+    -fx-font-family: "Consolas", "Courier New", "Monospaced";
+    -fx-font-size: 11px;
+    -fx-text-fill: #2E86C1;
+    -fx-padding: 4 8;
+}
+
+/* ===== CONTROL PANEL ===== */
+.control-panel {
+    -fx-background-color: #F0F8FF;
+    -fx-border-color: #5DADE2;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 12;
+    -fx-spacing: 10;
+}
+
+.section-label {
+    -fx-font-family: "Consolas", "Courier New", "Monospaced";
+    -fx-font-size: 12px;
+    -fx-text-fill: #1A5276;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 2 0;
+}
+
+/* ===== GENRE LIST ===== */
+.genre-list-view {
+    -fx-font-family: "Consolas", "Courier New", "Monospaced";
+    -fx-font-size: 11px;
+    -fx-background-color: #E8F4FD;
+    -fx-border-color: #5DADE2;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-pref-height: 140px;
+}
+
+.genre-list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #1A5276;
+    -fx-padding: 3 8;
+}
+
+.genre-list-view .list-cell:selected {
+    -fx-background-color: #3498DB;
+    -fx-text-fill: #FFFFFF;
+}
+
+.genre-list-view .list-cell:filled:hover {
+    -fx-background-color: #D4E6F1;
+}
+
+/* ===== TEXT FIELDS & COMBO BOXES ===== */
+.filter-text-field {
+    -fx-font-family: "Consolas", "Courier New", "Monospaced";
+    -fx-font-size: 12px;
+    -fx-background-color: #E8F4FD;
+    -fx-border-color: #5DADE2;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-pref-width: 80px;
+    -fx-padding: 4;
+    -fx-text-fill: #1A5276;
+    -fx-prompt-text-fill: #85C1E9;
+}
+
+.filter-combo-box {
+    -fx-font-family: "Consolas", "Courier New", "Monospaced";
+    -fx-font-size: 12px;
+    -fx-background-color: #E8F4FD;
+    -fx-border-color: #5DADE2;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-pref-width: 180px;
+}
+
+.filter-combo-box .list-cell {
+    -fx-text-fill: #1A5276;
+}
+
+/* ===== BUTTONS ===== */
+.btn-recommend {
+    -fx-font-family: "Consolas", "Courier New", "Monospaced";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #2E86C1;
+    -fx-border-color: #1A5276;
+    -fx-border-width: 2;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 10 30;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #5DADE2, 4, 0.3, 0, 2);
+}
+
+.btn-recommend:hover {
+    -fx-background-color: #3498DB;
+    -fx-effect: dropshadow(gaussian, #2E86C1, 6, 0.5, 0, 3);
+}
+
+.btn-recommend:pressed {
+    -fx-background-color: #1A5276;
+    -fx-effect: none;
+}
+
+.btn-clear {
+    -fx-font-family: "Consolas", "Courier New", "Monospaced";
+    -fx-font-size: 12px;
+    -fx-text-fill: #2E86C1;
+    -fx-background-color: transparent;
+    -fx-border-color: #5DADE2;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-padding: 6 16;
+    -fx-cursor: hand;
+}
+
+.btn-clear:hover {
+    -fx-background-color: #D4E6F1;
+}
+
+/* ===== STATUS BAR ===== */
+.status-bar {
+    -fx-font-family: "Consolas", "Courier New", "Monospaced";
+    -fx-font-size: 11px;
+    -fx-text-fill: #2E86C1;
+    -fx-padding: 4 8;
+    -fx-background-color: #E8F4FD;
+    -fx-border-color: #5DADE2;
+    -fx-border-width: 1 0 0 0;
+}
+
+/* ===== TERMINAL TEXT AREA (RESULTS) ===== */
+.terminal-textarea {
+    -fx-font-family: "Consolas", "Courier New", "Monospaced";
+    -fx-font-size: 13px;
+    -fx-text-fill: #1A5276;
+    -fx-background-color: #E8F4FD;
+    -fx-border-color: #5DADE2;
+    -fx-border-width: 2;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 8;
+    -fx-control-inner-background: #E8F4FD;
+}
+
+.terminal-textarea .content {
+    -fx-background-color: #E8F4FD;
+}
+
+.terminal-textarea:focused {
+    -fx-border-color: #2E86C1;
+}
+
+/* ===== LOADING OVERLAY ===== */
+.loading-label {
+    -fx-font-family: "Consolas", "Courier New", "Monospaced";
+    -fx-font-size: 16px;
+    -fx-text-fill: #1A5276;
+    -fx-alignment: center;
+}
+
+/* ===== SCROLL PANE ===== */
+.genre-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.genre-scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* ===== HBox for controls row ===== */
+.controls-row {
+    -fx-spacing: 15;
+    -fx-alignment: center-left;
+}
+
+/* ===== Separator line ===== */
+.separator-line {
+    -fx-border-color: #D4E6F1;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 5 0;
+}
