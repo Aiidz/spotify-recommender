@@ -490,12 +490,6 @@ The dataset contains **114 unique genres** and **~114,000 tracks**.
 
 ---
 
-## 👤 Author
-
-University project — Data Structures & Algorithms course.
-
----
-
 ## 📄 License
 
 Educational use only. Dataset sourced from Spotify for academic purposes.
