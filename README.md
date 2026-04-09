@@ -176,7 +176,7 @@ A window will appear with a loading screen, then the main terminal interface.
 ║          Spotify Music Recommendation System             ║
 ╚══════════════════════════════════════════════════════════╝
 
-┌─── GENRES (Multi-select) ───────────────────────────────┐
+┌─── GENRES (Multi-select) ────────────────────────────────┐
 │ □ acoustic                                               │
 │ □ afrobeat                                               │
 │ □ alternative                                            │
